@@ -24,15 +24,14 @@ module CorydoraKanei
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
-    # Configuration for the application, engines, and railties goes here.
-    #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
-    # config.eager_load_paths << Rails.root.join("extras")
-
-    # Don't generate system test files.
+    config.autoloader = :classic
+    config.time_zone = ENV.fetch('TZ', 'Brasilia')
+    config.i18n.default_locale = 'pt-BR'
+    config.i18n.fallbacks = [:en]
+    config.beginning_of_week = :sunday
+    config.assets.enabled = true
+    config.serve_static_assets = true
+    
     config.generators.system_tests = nil
   end
 end
