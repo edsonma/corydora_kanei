@@ -1,0 +1,24 @@
+production:
+  clientes:
+    default:
+      uri: <%= ENV['MONGODB_URI'] %>
+    options:
+      connect_timeout: 15
+      max_pool_size: 
+development:
+  clients:
+    default:
+      database: corydora_kanei_development
+      hosts:
+        - localhost:27017
+      options:
+test:
+  clients:
+    default:
+      database: corydora_kanei_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
