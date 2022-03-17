@@ -1,24 +1,12 @@
-# README
+# Corydora Kanei
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Corydoras kanei is a small species of catfish from the family Callyichthydae endemic to Brazil where it is found in the Negros River basin.
 
-Things you may want to cover:
+This Simple Base App is a foundation for any quick Rails project. It helps you previous testing resources and funcionalities 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Summary
+ - Ruby 3.1.1p18
+ - Rails 6.1.5
+ - Mongo 7.3
+ 
+ 
